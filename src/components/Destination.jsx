@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpaceStore } from "../store/useSpaceStore";
 
-// let planet = "";
 const Destination = () => {
   const destinations = useSpaceStore((state) => state.destinations);
   const [planet, setPlanet] = useState(destinations[0]);
@@ -14,12 +13,7 @@ const Destination = () => {
 
   const handleClickDestinations = (index) => {
     setPlanet(destinations[index]);
-    // descript = destinations.find((item) => item.index === index);
-
-    // descript = destinations.find((item) => item.index === index);
-    // setFindDescript(descript);
     setActive(index);
-    // console.log(planet);
   };
 
   console.log(planet);
@@ -93,7 +87,3 @@ const Destination = () => {
 };
 
 export default Destination;
-
-// <p className="flex flex-wrap text-[#D6D0F9] text-center text-[0.8675rem] font-fontBarlow leading-[1.5625rem] h-[7.8rem] md:w-[34.8125rem] md:h-max md:leading-[1.75rem] lg:text-[1.05rem] lg:leading-[1.9rem] lg:w-[19rem] lg:max-w-[27.75rem] lg:text-left xl:w-[23rem]">
-//   {planet.description}
-// </p>;

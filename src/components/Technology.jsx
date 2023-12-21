@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useSpaceStore } from "../store/useSpaceStore";
-import CanvasDraw from "@win11react/react-canvas-draw";
 
 const Technology = () => {
   const technology = useSpaceStore((state) => state.technology);
@@ -39,8 +38,6 @@ const Technology = () => {
     }
   };
 
-  // const item =
-
   return (
     <div className="pt-[5.2rem] xl:pt-[7.3rem] bg-[url('/img/technology/background-technology-mobile.jpg')] sm:bg-[url('/img/technology/background-technology-tablet.jpg')] lg:bg-[url('/img/technology/background-technology-desktop.jpg')] w-full h-[100vh] bg-cover">
       <main className="w-full lg:max-w-[1440px] h-full flex flex-col items-center pt-[1.5rem] md:pt-[2.5rem]  lg:pl-[9.41rem] lg:pt-[4.1rem] lg:pb-[7rem] xl:mx-auto xl:pl-[13.41rem] box-border">
@@ -61,11 +58,7 @@ const Technology = () => {
                     srcset={`${techno.images.landscape}`}
                     alt={techno.name}
                   />
-                  {/* <source
-                    // className="absolute w-full h-full object-cover"
-                    media="(min-width: 800px)"
-                    srcset={`${techno.images.portrait}`}
-                  /> */}
+
                   <img
                     className="absolute w-full h-full object-cover"
                     src={techno.images.portrait}
