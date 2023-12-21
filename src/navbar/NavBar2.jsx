@@ -63,7 +63,7 @@ const NavBar2 = () => {
         >
           <img
             className="w-[40px] h-[40px] md:w-[48px] md:h-[48px] lg:w-[50px] lg:h-[50px]"
-            src="/logo.svg"
+            src="logo.svg"
           />
         </button>
       </div>
