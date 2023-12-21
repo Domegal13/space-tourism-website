@@ -6,9 +6,9 @@ export const useSpaceStore = create((set, get) => ({
   technology: [],
   slidesCrew: [],
   activeDestin: false,
-  // open: false,
+
   fetchDataSpace: async () => {
-    const resp = await fetch("http://localhost:5173/data.json");
+    const resp = await fetch("../../dist/data.json");
     const json = await resp.json();
     const destinations = json.destinations;
     const crew = json.crew;

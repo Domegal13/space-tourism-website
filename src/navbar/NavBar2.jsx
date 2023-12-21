@@ -74,7 +74,7 @@ const NavBar2 = () => {
         }  absolute top-[1.3rem] right-[.8rem] w-[40px] h-[40px] flex items-center justify-center z-20 md:hidden`}
         onClick={handleClickHamburger}
       >
-        <img className="w-[19.1px] h-[16.5px]" src="/icon-hamburger.svg" />
+        <img className="w-[19.1px] h-[16.5px]" src="icon-hamburger.svg" />
       </button>
 
       {/* <div className="bg-slate-600/50 min-h-screen w-1/3 pt-6 pr-4 flex items-start justify-end absolute"> */}
@@ -89,7 +89,7 @@ const NavBar2 = () => {
           className="btn-close pt-5 pr-5 absolute right-0"
           onClick={handleClickHamburger}
         >
-          <img className="w-[17px] pt-1" src="/icon-close.svg" />
+          <img className="w-[17px] pt-1" src="icon-close.svg" />
         </button>
 
         <ul className="fixed text-slate-200 font-medium text-sm top-0 right-0 w-60 mt-10 pt-12 pl-8">
