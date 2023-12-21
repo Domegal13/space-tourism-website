@@ -3,22 +3,19 @@ import { useNavigate } from "react-router-dom";
 import { useSpaceStore } from "../store/useSpaceStore";
 
 const NavBar2 = () => {
-  
+  const activeDestin = useSpaceStore((state) => state.activeDestin);
+  const activeDestination = useSpaceStore((state) => state.activeDestination);
   const [open, setOpen] = useState(false);
   const [clickHome, setClickHome] = useState(false);
   const [clickDestination, setClickDestination] = useState(false);
   const [clickCrew, setClickCrew] = useState(false);
   const [clickTechnology, setClickTechnology] = useState(false);
-  const activeDestin = useSpaceStore((state) => state.activeDestin);
-  const activeDestination = useSpaceStore((state) => state.activeDestination);
 
   const navegacion = useNavigate();
 
   const handleClickHamburger = () => {
     setOpen(!open);
   };
-
- 
 
   const clickChekedHome = () => {
     setClickHome(true);
